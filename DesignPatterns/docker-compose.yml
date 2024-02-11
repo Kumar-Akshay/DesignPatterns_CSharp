@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  unitofwork:
+    image: ${DOCKER_REGISTRY-}unitofwork
+    build:
+      context: .
+      dockerfile: UnitofWork/Dockerfile
+    depends_on:
+      - database_container
+
+  database_container:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: database_container
+    environment:
+      SA_PASSWORD: testpass&1234
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"

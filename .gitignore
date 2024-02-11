@@ -7,3 +7,6 @@
 /DesignPatterns/UnitofWork/obj
 /DesignPatterns/.vs/ProjectEvaluation
 /DesignPatterns/UnitofWork/bin/Debug/net6.0
+/DesignPatterns/bin/Debug
+/DesignPatterns/obj/Debug
+/DesignPatterns/obj/Docker

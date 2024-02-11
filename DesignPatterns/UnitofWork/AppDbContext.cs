@@ -14,7 +14,7 @@ namespace UnitofWork
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=AKSHAY-DESKTOP\\SQLEXPRESS;Database=testDb;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Data Source=database_container;Initial Catalog=testDb;User Id=sa;Password=testpass&1234");
         }
     }
 }
